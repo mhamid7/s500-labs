@@ -133,6 +133,8 @@ Suggested description: “Build a scoped identity lab with a test user, security
 
 ## 9. Cleanup
 
+**Continuing to Lab 2?** Keep `rg-sc500-lab1`, `sc500-mi`, `SC500-Security-Team` and `sc500-user1`, including the test user's P1 license and the group's RG Reader assignment. Record their object IDs privately. Lab 2 uses this exact RG name, rather than `rg-sc500-lab` in the overview images. You may remove the Lab 1 report-only policy and optional PIM assignments after recording; Lab 2 does not require them. Use the complete cleanup below only when finished with the shared lab resources.
+
 In this order, inspect each exact object before removing it:
 
 1. Delete only `SC500-Lab1-Require-MFA-Azure-Management`; leave the two pre-existing CA policies alone.

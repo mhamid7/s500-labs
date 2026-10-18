@@ -43,7 +43,7 @@ Working assumption: **less than USD 4 additional Azure spending for the whole fi
 | Lab | Content and proof | Budget approach |
 |---|---|---|
 | 1 | Entra user/group, RG Reader, report-only MFA CA, managed identity; optional PIM | No new metered Azure service; use existing P1 seats |
-| 2 | Key Vault and Storage: control plane vs data plane, scoped RBAC, secure settings | Inspect existing resources; use only tiny test data/operations after pricing review |
+| 2 | Key Vault + managed identity + RBAC + IP firewall: separate resource access from secret access | New isolated Standard vault only after Defender pricing review; tiny dummy-secret operations; Private Endpoint conceptual |
 | 3 | Network governance: VNet/NSG, Policy audit, locks; explain private access | No VMs or paid network appliances; use audit assignments and configuration evidence |
 | 4 | Compute and AI security posture | Read existing Defender recommendations and AI settings; demonstrate configuration/review, not paid workload protection deployment |
 | 5 | Monitoring and investigation: Activity Log, Defender posture, existing Sentinel | Query existing data; no new ingestion, connectors, playbooks or paid Copilot capacity |
